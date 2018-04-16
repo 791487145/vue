@@ -1,0 +1,266 @@
+html{
+    height: 100%;
+}
+body {
+    min-width: 320px;
+    font-weight: lighter;
+    font-family: 'Microsoft Yahei';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust:none;  /* 字型大小是不會變的，而使用者就無法透過縮放網頁來達成放大字型 */  
+    -webkit-appearance: none;       /*可以改变按钮或者其它控件看起来类似本地的控件*/  
+    -webkit-user-drag: none;        /*-webkit-user-drag CSS 属性控制能否将元素作为一个整体拖动。*/  
+    /* -webkit-user-select : none; 如果用户长按web网页的文本内容，都会出现选中的行为，提供复制文字等功能。禁止用户选中文字 for iOS  可能导致部分安卓无法输入*/
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    outline: 0 none;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #ff4f20;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*很多Android 浏览器的 a 链接有边框，这里取消它 transparent */  
+}
+
+a:focus {
+    -moz-outline-style: none;
+    border: 0px;
+    /* blr: expression(this.onFocus=this.blur()); */
+}
+a, img{    
+    -webkit-touch-callout:none;  /* 在IOS浏览器里面，假如用户长按a标签，都会出现默认的弹出菜单事件。禁止用户在新窗口打开页面、如何禁止用户保存图片＼复制图片 for iOS */    
+  }  
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+}
+
+header,
+footer,
+article,
+aside,
+section,
+nav,
+menu,
+hgroup,
+details,
+dialog,
+figure,
+figcaption {
+    display: block
+}
+
+ol,
+li,
+ul,
+dl,
+dt,
+dd {
+    list-style: none;
+}
+
+fieldset,
+img {
+    border: 0
+}
+
+button{
+    border-style: none;
+}
+submit,
+input,
+select {
+    vertical-align: middle;
+}
+
+button,
+submit {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: lighter;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+sup {
+    vertical-align: text-top;
+}
+
+sub {
+    vertical-align: text-bottom;
+}
+
+select,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    outline-style: none;
+    outline-width: 0pt;
+    padding: 0;
+    margin: 0;
+}
+
+b,
+em,
+i {
+    display: inline-block;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.container {
+    width: 1200px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+
+/*头部样式*/
+
+#tmpld {
+    width: 100%;
+    max-width: 40rem/* 640/16 */
+    ;
+    min-width: 20rem/* 320/16 */
+    ;
+    margin: 0 auto;  
+    background-color: #EDEDED;
+    background-repeat: no-repeat;
+    height: 100%;
+    overflow-x: hidden;
+}
+/* 滚动条隐藏 */
+::-webkit-scrollbar {
+    width: 0em;
+    }
+    ::-webkit-scrollbar:horizontal {
+    height: 0em;
+    }
+
+/* 底部样式 */
+
+#zhuye img {
+    width: 2.9375rem/* 47/16 */
+    ;
+    /*赏金图标*/
+}
+
+.mui-bar {
+    height: 3.125rem/* 50/16 */
+    ;
+    padding-bottom: .3125rem/* 5/16 */
+    ;
+    z-index: 100;
+    min-width: 20rem/* 320/16 */
+    ;
+    max-width: 40rem/* 640/16 */
+    ;
+    margin: 0 auto;
+}
+
+.mui-bar #money {
+    width: 2.9375rem/* 47/16 */
+    ;
+    height: 2.9375rem/* 47/16 */
+    ;
+    border-radius: 1.75rem/* 28/16 */
+    ;
+}
+
+.mui-icon img {
+    width: 100%;
+    margin-top: .25rem/* 4/16 */
+    ;
+}
+
+ul {
+    list-style: none;
+    /*清除ul li 样式*/
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+    /*清除ul li 样式*/
+    padding: 0;
+    margin: 0;
+}
+
+
+
+.divcss{
+    color: #fff;
+    background-color:#D8443A;
+}
+.cssdiv{
+    color: #D8443A;
+    background-color: #fff;
+}
+.divcsss{
+    color: #e7e7e7;
+    background-color: #000;
+}
+.divcssss{
+    color: #fff;
+    background:-webkit-linear-gradient(right, #759ffe,#75c9ff);
+}
+
+
